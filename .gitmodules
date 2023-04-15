@@ -1,0 +1,6 @@
+[submodule "CTkMessagebox"]
+	path = CTkMessagebox
+	url = https://github.com/Akascape/CTkMessagebox
+[submodule "CTkToolTip"]
+	path = CTkToolTip
+	url = https://github.com/Akascape/CTkToolTip
