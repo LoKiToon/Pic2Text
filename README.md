@@ -59,7 +59,7 @@ Next, after Git is installed, open Command Prompt (cmd.exe) and run the followin
 ```
 git clone --recursive https://github.com/LoKiToon/OCR-Python-Project
 cd OCR-Python-Project
-install.bat
+install-dep-win.bat
 ```
 
 Now you can start the app.
@@ -78,7 +78,7 @@ Open a terminal and type the following commands.
 git clone --recursive https://github.com/LoKiToon/OCR-Python-Project
 cd OCR-Python-Project
 chmod 755 install.sh
-./install.sh
+./install-dep-linux.sh
 ```
 
 After the installation is done, you can start the app.
