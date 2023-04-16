@@ -34,8 +34,7 @@ In the installer, make sure to set the destination folder to `C:\Program Files\T
 
 Then, download ffmpeg. https://www.gyan.dev/ffmpeg/builds/#git-master-builds
 
-Find `
-ffmpeg-git-full.7z`, then download that file. Make sure to install 7-Zip to open the file.
+Find `ffmpeg-git-full.7z`, then download that file. Make sure to install 7-Zip to open the file.
 
 Once you have opened the file in 7-Zip, extract the folder to `C:\`, and rename the folder to `FFmpeg`.
 
