@@ -384,6 +384,8 @@ class App(CTk.CTk):
                 self.definedTooltips[i][0],
                 message=self.definedTooltips[i][1],
                 bg_color=("gray75", "gray25"),
+                justify="left",
+                wraplength=150,
                 delay=0,
             )
             self.currentTooltips.append(self.tooltip)
