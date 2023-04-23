@@ -796,7 +796,7 @@ class App(CTk.CTk):
                 ["User Manual", "https://github.com/LoKiToon/Pic2Text/blob/master/Pic2Text_User_Manual.pdf"],
                 ["Demo Video", "https://youtu.be/ZR5BAkcbMqY"],
                 ["Github Launch", "https://github.com/LoKiToon/Pic2Text"],
-                ["LinkedIn Launch", ""],
+                ["LinkedIn Launch", "https://www.linkedin.com/pulse/recognize-text-from-image-user-friendly-interface-pic2text-taibeh"],
                 ["App Development Toolkit", "https://docs.google.com/spreadsheets/d/1huna7g1E7eWEHNenM4X6gNFcnYXJcmq-/edit?usp=sharing&ouid=104577051238204190186&rtpof=true&sd=true"],
             ]
 

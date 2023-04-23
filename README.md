@@ -126,6 +126,11 @@ Now, you can either copy the recognized text to your clipboard, or have the comp
   - Image Contrast Slider - Drag the slider to change the contrast of the image. Click the button below the slider to reset its value.
   - Blur Amount Slider - Drag the slider to change the softness of the image. Use it when the image has noise, and it interferes with the optical character recognition.
 
+## [Video Demo](https://www.youtube.com/watch?v=ZR5BAkcbMqY)
+
 ## [User Manual](Pic2Text_User_Manual.pdf)
+
+## [LinkedIn Launch](https://www.linkedin.com/pulse/recognize-text-from-image-user-friendly-interface-pic2text-taibeh)
+
 
 ## [Link to App Development Toolkit Workbook](https://docs.google.com/spreadsheets/d/1huna7g1E7eWEHNenM4X6gNFcnYXJcmq-/edit?usp=sharing&ouid=104577051238204190186&rtpof=true&sd=true)
