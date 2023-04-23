@@ -37,7 +37,19 @@ class App(CTk.CTk):
         self.grid_columnconfigure((0, 1, 2), weight=1)
         self.grid_rowconfigure((0, 1), weight=1)
         self.minsize(1070, 835)
+
+        # set icon for linux and windows
+
+        self.wm_iconbitmap()
         self.iconphoto(True, PhotoImage(file=sys.path[0] + "/res/Pic2Image.png"))
+
+        # automatically scale application based on user's display resolution
+
+        self.scr_width = self.winfo_screenwidth()
+        self.scr_height = self.winfo_screenheight()
+
+        CTk.set_widget_scaling((self.scr_width+self.scr_height)/6000+.5)
+        CTk.set_window_scaling((self.scr_width+self.scr_height)/3000)
 
         # variables
 
@@ -209,7 +221,7 @@ class App(CTk.CTk):
 
         # options
 
-        self.options_frame = CTk.CTkFrame(self)
+        self.options_frame = CTk.CTkScrollableFrame(self)
         self.options_frame.grid(
             row=0, column=2, rowspan=2, padx=5, pady=5, sticky="nsew"
         )
