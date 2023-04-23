@@ -123,7 +123,7 @@ class App(CTk.CTk):
             command=self.extract_frames,
         )
         self.video_frame_extractor_open_video.grid(padx=5, pady=5, sticky="nwe")
-        
+
         self.video_frame_extractor_slider = CTk.CTkSlider(
             self.video_frame_extractor_frame,
             state="disabled",
@@ -405,7 +405,7 @@ class App(CTk.CTk):
                 delay=0,
             )
             self.current_tooltips.append(self.tooltip)
-            
+
     def copy_recognized_text(self):
         try:
             pyclip.copy(self.recognized_text_textbox.get("0.0", "end"))
@@ -745,7 +745,7 @@ class App(CTk.CTk):
                 light_image=Image.open(sys.path[0] + "/res/Pic2Image.png"),
                 size=(322, 293)
             )
-            
+
             self.about_logo = CTk.CTkButton(
                 self.about_window,
                 text="This logo was designed using Inkscape",
@@ -793,7 +793,7 @@ class App(CTk.CTk):
             ]
 
             self.project_links = [
-                ["User Manual", "https://github.com/LoKiToon/Pic2Text/blob/master/Pic2Text_User_Manual.pdf"],
+                ["User Manual", "https://raw.githubusercontent.com/LoKiToon/Pic2Text/master/Pic2Text_User_Manual.pdf"],
                 ["Demo Video", "https://youtu.be/ZR5BAkcbMqY"],
                 ["Github Launch", "https://github.com/LoKiToon/Pic2Text"],
                 ["LinkedIn Launch", "https://www.linkedin.com/pulse/recognize-text-from-image-user-friendly-interface-pic2text-taibeh"],
@@ -823,7 +823,7 @@ class App(CTk.CTk):
 
             for link in self.project_links:
                 create_link(link, self.project_links_tab)
-            
+
             for link in self.contact_links:
                 create_link(link, self.contact_tab)
         else:
