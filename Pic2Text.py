@@ -5,7 +5,7 @@ import os                                                # using for managing th
 import sys                                               # used for getting the actual path of the pythom script
 from shutil import rmtree                                # used for removing directories
 from subprocess import CalledProcessError, check_output  # running and checking the status of ffmpeg (must be installed)
-from tkinter import filedialog                           # pop-up box with a list of files for the user to choose
+from tkinter import filedialog, PhotoImage               # pop-up box with a list of files for the user to choose, and icon for the window
 
 import customtkinter as CTk                              # the main interface for the app
 from webbrowser import open                              # open links
@@ -37,6 +37,7 @@ class App(CTk.CTk):
         self.grid_columnconfigure((0, 1, 2), weight=1)
         self.grid_rowconfigure((0, 1), weight=1)
         self.minsize(1070, 835)
+        self.iconphoto(True, PhotoImage(file=sys.path[0] + "/res/Pic2Image.png"))
 
         # variables
 
