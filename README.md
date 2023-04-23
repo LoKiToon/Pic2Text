@@ -1,4 +1,4 @@
-# The Optical Character Recognition Tool
+# ![Pic2Text](res/Pic2Image.png)
 
 ![Alt text](screenshots/app_preview.png)
 
@@ -57,14 +57,14 @@ Then install Git for Windows. Download the latest version. https://git-scm.com/d
 Next, after Git is installed, open Command Prompt (cmd.exe) and run the following commands.
 
 ```
-git clone --recursive https://github.com/LoKiToon/OCR-Python-Project
-cd OCR-Python-Project
+git clone --recursive https://github.com/LoKiToon/Pic2Text
+cd Pic2Text
 install-dep-win.bat
 ```
 
 Now you can start the app.
 
-`python OCR-Tool.py`
+`python Pic2Text.py`
 
 ## Setup ( For Linux )
 
@@ -75,15 +75,15 @@ Make sure you have Git installed. ( If it's not already installed. )
 Open a terminal and type the following commands.
 
 ```
-git clone --recursive https://github.com/LoKiToon/OCR-Python-Project
-cd OCR-Python-Project
-chmod 755 install.sh
+git clone --recursive https://github.com/LoKiToon/Pic2Text
+cd Pic2Text
+chmod 755 install-dep-linux.sh
 ./install-dep-linux.sh
 ```
 
 After the installation is done, you can start the app.
 
-`python3 OCR-Tool.py`
+`python3 Pic2Text.py`
 
 ## How To Use This App
 
@@ -126,6 +126,6 @@ Now, you can either copy the recognized text to your clipboard, or have the comp
   - Image Contrast Slider - Drag the slider to change the contrast of the image. Click the button below the slider to reset its value.
   - Blur Amount Slider - Drag the slider to change the softness of the image. Use it when the image has noise, and it interferes with the optical character recognition.
 
-## Link to App Development Toolkit Workbook
+## [User Manual](Pic2Text_User_Manual.pdf)
 
-https://docs.google.com/spreadsheets/d/1huna7g1E7eWEHNenM4X6gNFcnYXJcmq-/edit?usp=sharing&ouid=104577051238204190186&rtpof=true&sd=true
+## [Link to App Development Toolkit Workbook](https://docs.google.com/spreadsheets/d/1huna7g1E7eWEHNenM4X6gNFcnYXJcmq-/edit?usp=sharing&ouid=104577051238204190186&rtpof=true&sd=true)
