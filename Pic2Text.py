@@ -754,22 +754,28 @@ class App(CTk.CTk):
             self.about_window.title("About Pic2Text")
             self.about_window.resizable(False, False)
 
+            self.about_frame = CTk.CTkFrame(self.about_window)
+            self.about_frame.pack(side="left", padx=5, pady=5, fill="both")
+
             self.about_logo_image = CTk.CTkImage(
                 light_image=Image.open(sys.path[0] + "/res/Pic2Image.png"),
                 size=(322, 293)
             )
 
-            self.about_logo = CTk.CTkButton(
-                self.about_window,
+            self.about_logo = CTk.CTkLabel(
+                self.about_frame,
+                text="",
+                image=self.about_logo_image
+            ).pack(padx=5, pady=5, expand=True)
+
+            self.about_logo_credit = CTk.CTkButton(
+                self.about_frame,
                 text="This logo was designed using Inkscape",
-                compound="top",
                 border_width=0,
-                image=self.about_logo_image,
                 fg_color="transparent",
-                hover=False,
                 font=CTk.CTkFont(underline=True),
                 command=lambda: open("https://inkscape.org/"),
-            ).pack(side="left", padx=5, pady=5)
+            ).pack(padx=5, pady=5)
 
             self.about_app_description = CTk.CTkLabel(
                 self.about_window,
@@ -781,7 +787,7 @@ class App(CTk.CTk):
             self.libraries_tab = self.about_tabview.add("Libraries & External Programs")
             self.project_links_tab = self.about_tabview.add("Project Links")
             self.contact_tab = self.about_tabview.add("Contact Me")
-            self.about_tabview.pack(padx=5, pady=5)
+            self.about_tabview.pack(padx=5, pady=5, fill="y", expand=True)
 
             self.about_app_utilize = CTk.CTkLabel(
                 self.libraries_tab,
@@ -825,7 +831,6 @@ class App(CTk.CTk):
                     height=0,
                     border_width=0,
                     fg_color="transparent",
-                    hover=False,
                     font=CTk.CTkFont(underline=True),
                     command=lambda: open(link[1]),
                     border_spacing=0
