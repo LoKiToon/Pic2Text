@@ -1,0 +1,7 @@
+customtkinter
+numpy
+opencv_python
+Pillow
+pyclip
+pytesseract
+pyttsx3

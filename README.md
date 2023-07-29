@@ -54,36 +54,52 @@ Click "Edit...", then "Browse...". Go to `This PC > Local Disk (C:) > FFmpeg > b
 
 Then install Git for Windows. Download the latest version. https://git-scm.com/download/win
 
-Next, after Git is installed, open Command Prompt (cmd.exe) and run the following commands.
+Next, after Git is installed, open Command Prompt (cmd.exe) and clone this repository.
 
 ```
 git clone --recursive https://github.com/LoKiToon/Pic2Text
 cd Pic2Text
-install-dep-win.bat
 ```
 
-Now you can start the app.
+Now install from the "requirements.txt" file. This will install the required Python libraries.
+
+```python -m pip install -r requirements.txt```
+
+Finally, you can start the app.
 
 `python Pic2Text.py`
 
-## Setup ( For Linux )
+## Setup ( For GNU/Linux )
 
-Make sure you have Git installed. ( If it's not already installed. )
+Git and Python should be installed in your GNU/Linux system. If not, install them through your package manager, or you can compile them from source.
 
-`sudo apt install git`
+You also have to install Pip, and the following dependencies through your package manager. **Their names may be different, so please check through your package manager.**
 
-Open a terminal and type the following commands.
+```
+python3
+python3-pip
+python3-tk
+espeak
+ffmpeg
+tesseract-ocr
+```
+
+After you installed the correct packages, clone the repository.
 
 ```
 git clone --recursive https://github.com/LoKiToon/Pic2Text
 cd Pic2Text
-chmod 755 install-dep-linux.sh
-./install-dep-linux.sh
 ```
+
+Now install from the "requirements.txt" file. This will install the required Python libraries.
+
+```python -m pip install -r requirements.txt```
 
 After the installation is done, you can start the app.
 
-`python3 Pic2Text.py`
+`python Pic2Text.py`
+
+If the `python` command doesn't work, try `python3`.
 
 ## How To Use This App
 
